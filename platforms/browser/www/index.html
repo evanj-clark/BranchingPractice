@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
+    <title>Exercise 2</title>
+</head>
+
+<body>
+    <div class="app">
+        <header><h1 class="location">Lethbridge</h1></header>
+        <section>
+            <div class="block1">
+                <span>
+                    <span id="temp">
+                    </span>&#8451;
+                </span>
+                <span>
+                <img id="icon">
+                </span>
+            </div>
+            <hr>
+            <div id="description" class="block2">
+                cloudy
+            </div>
+            <hr>
+        </section>
+        <div class="block3">
+            <span class="humidity"><span id=humidity></span>&#65285;</span>
+            <span class="minmax">
+                <div><span id="maxtemp">10</span>&#8451;</div>
+                <div>&#8597;</div>
+                <div><span id="mintemp">-10</span>&#8451;</div>
+            </span>
+            <span class="wind">
+                <div><i class="wi wi-strong-wind"></i></div>
+                <div id="wind"></div>
+            </span>
+  
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <!--<script type="text/javascript" src="js/index.js"></script>-->
+    <script type="text/javascript" src="js/weatherapp.js"></script>
+</body>
+
+</html>
